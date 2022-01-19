@@ -53,10 +53,7 @@ function App() {
                   />
                   <Card.Body>
                     <Card.Title>{pokemon.name.toUpperCase()}</Card.Title>
-                    <Card.Text>
-                      {pokemon.name.toUpperCase()} moves are{" "}
-                      {pokemon.moves.length}
-                    </Card.Text>
+                    <Card.Text>Total Moves: {pokemon.moves.length}</Card.Text>
                   </Card.Body>
                 </Card>
               ))}
