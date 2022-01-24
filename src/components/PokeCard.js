@@ -3,7 +3,7 @@ import { Card } from "react-bootstrap";
 
 const PokeCard = ({ name, image, moves }) => {
   return (
-    <div>
+    <div className="pokecard">
       <Card bg="dark" text="light" key={name}>
         <Card.Img variant="top" src={image} />
         <Card.Body>

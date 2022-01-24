@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
-      <p>&copy; 2021 Cook IT</p>
+    <div className="footer text-align-center">
+      <p>&copy; 2021 Anjula Timsina</p>
     </div>
   );
 };
