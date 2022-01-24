@@ -15,7 +15,7 @@
 
 ## Screenshot
 
-![screenshot of pokemon app](pokemon.png)
+![screenshot of pokemon app](./images/pokemon.png)
 
 ## Setup
 
