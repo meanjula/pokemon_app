@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "./Header";
 
 const Home = () => {
   return (
     <div className="home">
-      <Header />
-      <h1>Hello</h1>
+      <div className="home-main">
+        <h1>Hello</h1>
+      </div>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import { Container, Row, Spinner, Button } from "react-bootstrap";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Header from "./Header";
+
 import PokeCard from "./PokeCard";
 
 const Pokemons = () => {
@@ -27,7 +27,6 @@ const Pokemons = () => {
   return (
     <div className="App">
       <>
-        <Header />
         <Container>
           <Row
             xs={2}

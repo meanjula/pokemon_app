@@ -1,5 +1,6 @@
 .add-padding {
   padding: 2rem;
+
   background-color: rgb(
     66,
     89,
@@ -9,3 +10,9 @@
 /* .home {
   background: url("./components/images/pokemon.png");
 } */
+.navbar {
+  color: white;
+}
+.home-main {
+  background: ;
+}
