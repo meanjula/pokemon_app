@@ -44,7 +44,7 @@ include in index.html link for bootstrap
 
 ## App js
 
-- import your BootStrap components
+- import your BootStrap components(Css framework that uses css html and jquery)
 - use useState hook for changing pokemon data.
 - use useEffect hook for fetching api data from pokeapi.
 

@@ -1,5 +1,5 @@
 .add-padding {
-  padding: 2rem;
+  padding: 1rem;
 
   background-color: rgb(
     66,
@@ -25,6 +25,10 @@
 .footer {
   text-align: center;
   margin-top: 1rem;
+  justify-content: space-evenly;
+}
+.bg-card {
+  background-color: rgb(177, 206, 211);
 }
 .card-img-top {
   width: 100%;
