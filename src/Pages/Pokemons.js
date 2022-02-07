@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Container, Row, Button } from "react-bootstrap";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
@@ -59,7 +60,7 @@ const Pokemons = ({ favHandler, favourites }) => {
                   moves={pokemon.moves}
                   version={pokemon.version_groups}
                   pokemonName={pokemon.name}
-                  fav={false} //{favourites.some(item=>item.name === pokemon.name)}
+                  fav={favourites.some((item) => item.name === pokemon.name)} //{false}
                   favClick={() => favHandler(pokemon)}
                 />
               ))}

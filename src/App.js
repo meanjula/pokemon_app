@@ -9,29 +9,34 @@ import Favlist from "./components/Favlist";
 
 function App() {
   const [favourites, setFavourites] = useState([]);
-  // const getArray = JSON.parse(localStorage.getItem("favourites") || "0");
-  // useEffect(() => {
-  //   if (getArray !== 0) {
-  //     setFavourites(getArray);
-  //   }
-  // }, []);
-  // useEffect(() => {
-  //   localStorage.setItem("favourites".JSON.stringify(favourites));
-  // }, [favourites]);
+  //storing fave pokemon in local storage
+
+  const getArray = JSON.parse(localStorage.getItem("favourites") || "0");
+  useEffect(() => {
+    if (getArray !== 0) {
+      setFavourites(getArray);
+    }
+  }, []);
+  useEffect(() => {
+    localStorage.setItem("favourites", JSON.stringify(favourites));
+  }, [favourites]);
+
   const favHandler = (pokemon) => {
     let item = favourites.some((item) => item.id === pokemon.id);
     if (!item) {
       setFavourites((prevState) => [...prevState, pokemon]);
+      localStorage.setItem(pokemon.name, JSON.stringify(pokemon));
     } else {
       const newArray = [...favourites];
       newArray.splice(
         newArray.findIndex((item) => item.id === pokemon.id),
         1
       );
-      //     setFavourites(newArray);
+      setFavourites(newArray);
+      console.log(newArray); // if no favourites will be empty
       //     // localStorage.removeItem(pokemon.name);
     }
-    //   console.log("wow");
+    console.log(favourites);
   };
   return (
     <Router>
